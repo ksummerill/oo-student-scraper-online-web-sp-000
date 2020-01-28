@@ -10,6 +10,7 @@ class Student
     @name = student_hash[:name]
     @location = student_hash[:location]
     @@all << self
+    binding.pry
   end
 
   # iterate over the array of hashes and create a new individual student using each hash.
