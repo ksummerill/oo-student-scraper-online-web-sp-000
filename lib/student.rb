@@ -13,10 +13,19 @@ class Student
   end
 
   # iterate over the array of hashes and create a new individual student using each hash.
+  # => [{:name=>"Alex Patriquin", :location=>"New York, NY"},
+     # {:name=>"Bacon McRib", :location=>"Kansas City, MO"},
+     # {:name=>"Alisha McWilliams", :location=>"San Francisco, CA"},
+     # {:name=>"Daniel Fenjves", :location=>"Austin, TX"},
+     # {:name=>"Arielle Sullivan", :location=>"Chicago, IL"},
+     # {:name=>"Sushanth Bhaskarab", :location=>"Portland, OR"},
+     # {:name=>"Sushanth Bhaskarab", :location=>"Portland, OR"}]
+
   def self.create_from_collection(students_array)
     students_array.each do |new_student|
       binding.pry
-      Scraper.new = new_student
+      # first loop, new_student = {:name=>"Alex Patriquin", :location=>"New York, NY"}
+      new_student
     end
   end
 
