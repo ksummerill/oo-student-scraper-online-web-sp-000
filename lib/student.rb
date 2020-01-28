@@ -31,11 +31,12 @@ class Student
   # iterate over the given hash and use meta-programming to dynamically assign
   # the student attributes and values per the key/value pairs of the hash.
   # Use the #send method to achieve this.
+  # The return value of this method should be the student itself. Use the self keyword.
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |new_attribute|
       # binding.pry
       # k = Student.new
-      create_from_collection.send :new_attribute
+      Student.new(new_student).send :new_attribute
     end
   end
 
