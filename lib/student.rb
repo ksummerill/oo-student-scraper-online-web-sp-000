@@ -14,7 +14,9 @@ class Student
 
   # iterate over the array of hashes and create a new individual student using each hash.
   def self.create_from_collection(students_array)
-    Scraper.new(students_array)
+    students_array.each do |new_student|
+      Scraper.new(new_student)
+    end
   end
 
   def add_student_attributes(attributes_hash)
