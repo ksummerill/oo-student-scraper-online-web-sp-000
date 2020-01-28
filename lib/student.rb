@@ -9,8 +9,9 @@ class Student
   def initialize(student_hash)
     @name = student_hash[:name]
     @location = student_hash[:location]
+    student_hash.each do |k, v| 
+      self.send(("#{k}="), v)
     @@all << self
-    # binding.pry
   end
 
   # iterate over the array of hashes and create a new individual student using each hash.
