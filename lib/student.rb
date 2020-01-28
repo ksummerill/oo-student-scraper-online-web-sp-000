@@ -6,9 +6,10 @@ class Student
 
   def initialize(student_hash)
     @student_hash = student_hash
-    @@all << student_hash
+    @@all << self
   end
 
+  # iterate over the array of hashes and create a new individual student using each hash.
   def self.create_from_collection(students_array)
 
   end
