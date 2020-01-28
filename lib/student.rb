@@ -4,6 +4,8 @@ class Student
 
   @@all = []
 
+  # takes in an argument of a hash and sets that new student's
+  # attributes using the key/value pairs of that hash.
   def initialize(student_hash)
     @student_hash = student_hash
     @name = name
