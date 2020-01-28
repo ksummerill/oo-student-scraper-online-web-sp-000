@@ -26,7 +26,7 @@ class Student
     students_array.each do |new_student|
       # binding.pry
       # first loop, new_student = {:name=>"Alex Patriquin", :location=>"New York, NY"}
-      self.new_student
+      new_student
     end
   end
 
