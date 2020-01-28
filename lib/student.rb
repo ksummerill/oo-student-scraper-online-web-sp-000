@@ -7,8 +7,8 @@ class Student
   # takes in an argument of a hash and sets that new student's
   # attributes using the key/value pairs of that hash.
   def initialize(student_hash)
-    @name = student_hash[:name]
-    @location = student_hash[:location]
+    # @name = student_hash[:name]
+    # @location = student_hash[:location]
     student_hash.each do |k, v|
       self.send(("#{k}="), v)
     @@all << self
