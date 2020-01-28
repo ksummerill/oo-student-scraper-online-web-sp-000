@@ -33,10 +33,8 @@ class Student
   # Use the #send method to achieve this.
   # The return value of this method should be the student itself. Use the self keyword.
   def add_student_attributes(attributes_hash)
-    attributes_hash.each do |new_attribute|
-      # binding.pry
-      # k = Student.new
-      Student.new(new_student).send :new_attribute
+    attributes_hash.each do |k, v|
+      self.send(k, v)
     end
   end
 
