@@ -32,7 +32,7 @@ class Student
   # the student attributes and values per the key/value pairs of the hash.
   # Use the #send method to achieve this.
   def add_student_attributes(attributes_hash)
-    students_array.each do |new_attribute|
+    attributes_hash.each do |new_attribute|
       binding.pry
       Student.new(new_attribute)
     end
