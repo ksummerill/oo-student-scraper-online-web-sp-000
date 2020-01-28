@@ -8,6 +8,7 @@ class Student
   # attributes using the key/value pairs of that hash.
   def initialize(student_hash)
     @student_hash = student_hash
+    binding.pry
     @name = self.name
     @@all << self
   end
