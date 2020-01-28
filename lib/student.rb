@@ -11,7 +11,7 @@ class Student
     # @location = student_hash[:location]
     student_hash.each do |k, v|
       self.send(("#{k}="), v)
-    end  
+    end
     @@all << self
   end
 
