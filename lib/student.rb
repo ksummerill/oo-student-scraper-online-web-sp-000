@@ -33,7 +33,7 @@ class Student
   # Use the #send method to achieve this.
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |new_attribute|
-      binding.pry
+      # binding.pry
       k = Student.new
       k.send :new_attribute
     end
